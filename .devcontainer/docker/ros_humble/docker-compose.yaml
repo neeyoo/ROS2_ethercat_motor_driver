@@ -1,0 +1,9 @@
+services:
+  ros_humble:
+    image: ros_humble_devs
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - ../../../../ros2_ethercat_dev_ws:/home/yang/ros_ws:rw
+      - ~/.ssh:/home/yang/.ssh:ro
+    command: bash -c "sleep infinity"

@@ -1,0 +1,3 @@
+if(DEFINED MELO_FUNCTION_PRINTS)
+  add_definitions(-DMELO_FUNCTION_PRINTS)
+endif()
